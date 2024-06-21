@@ -229,6 +229,27 @@ img {
   font-weight: var(--font-semi);
   border-radius: 0.5rem;
   transition: 0.3s;
+  
+}
+.pulse-button {
+  -webkit-animation: pulse 1.5s infinite;
+}
+
+.pulse-button:hover {
+  -webkit-animation: none;
+}
+@-webkit-keyframes pulse {
+  0% {
+     transform:scale(.9);
+  }
+  70% {
+     transform:scale(1.2);
+    box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
+  }
+    100% {
+     transform:scale(.9);
+    box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
+  }
 }
 .button:hover {
   box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
